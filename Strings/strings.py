@@ -1,66 +1,65 @@
 #!/usr/bin/env python
 
 """
-str_example.py
-Examples that will be used in showing strings in python. 
-Created by Kellan Jacobs on 2011-12-10.
+Strings Examples
+
+This week continues where we left off working with strings. This week we will 
+cover string slicing, and a little bit of string formatting.
+
 """
 
-def main():
-    strArea = '415'
-    strPrefix = '555'
-    strSuffix = '1212'
+firstName = "Rose"
+lastName = "Tyler"
 
-    numArea = 415
-    numPrefix = 555
-    numSuffix = 1212
+areaCode = 212
+exchange = 664
+numSuffix = 7665
 
-    # Concatinating three strings into one.
-    phoneNumber = strArea + strPrefix + strSuffix
-    print 'Phone Number: ' + phoneNumber
+print "We can cancatinate strings with the + sign"
+print "fullName = firstName + lastName"
+fullName = firstName + lastName
+print 'Full Name: ' + fullName
+print ' '
 
-    # You can not concatinate numbers in the same way.
-    wrongNumber = numArea + numPrefix + numSuffix
-    print 'Wrong Number: ' + str(wrongNumber)
+print "You can't cancatinate numbers like string"
+print "wrongNumber = areaCode + exchange + numSuffix"
+wrongNumber = areaCode + exchange + numSuffix
+print 'Wrong Number: %s' % wrongNumber
+print ' '
 
-    # Lets get fancy and add - in the number
-    print 'Phone with Dash: ' + strArea + '-' + strPrefix + '-' + strSuffix 
+print 'String can be sliced using slice notation'
+print 'Slice Notation is [start:exclusive end]'
+print 'firstName[0]'
+print firstName[0]
+print 'firstName[0:3] excludes last character'
+print firstName[0:3]
+print ' '
 
-    # We can use the %s to add strings into another string.
-    print 'Getting Tricky: (%s) %s-%s' % (strArea, strPrefix, strSuffix)
+print 'We can print the last char of a string using negative numbers'
+print 'firstName[-1]'
+print firstName[-1]
+print ' '
 
-    # Print First Character in a string
-    print 'First Char: ' + phoneNumber[0]
+print "Skip first three characters"
+print "fullName[3:]"
+print fullName[3:]
+print ' '
 
-    # Print Last Character:
-    print 'Last Character: ' + phoneNumber[-1]
+print "Print First 4 Characters"
+print "fullName[:4]"
+print fullName[:4]
 
-    # Using Slice Notation Last number is non inclusive
-    print 'Print #\'s 4-6: ' + phoneNumber[3:6]
+# Format a phone number
+print '({0}) {1}-{2}'.format(areaCode,exchange,numSuffix)
 
-    # Skip the first three characters by using open ended notation
-    print 'Skip first three: ' + phoneNumber[3:]
+# First Initial Last name
+print '{0}. {1}'.format(firstName[0],lastName)
 
-    # Print only the first 6 numbers
-    print 'First 6: ' + phoneNumber[:6]
+# Left Aligned
+print '*' + '{0:<30}'.format("Doctor Who") + '*'
 
-    #repeat a string. Print 60 - characters
-    print '-' * 60
+# Centered
+print '*' + '{0:^30}'.format("Doctor Who") + '*'
 
-    # Print a box
-    screenWidth = 80
-    boxWidth = 40
-    padding = (screenWidth - boxWidth) / 2
-    print 'Printing a box. This will help with your homework'
-    print ' ' * padding + '+' + '-' * (boxWidth - 2) + '+'
-    print ' ' * padding + '|' + ' ' * (boxWidth - 2) + '|'
-    print ' ' * padding + '|' + ' ' * (boxWidth - 2) + '|'
-    print ' ' * padding + '+' + '-' * (boxWidth - 2) + '+'
-
-
-
-    
-
-
-if __name__ == '__main__':
-    main()
+# Right Aligned
+print '*' + '{0:>30}'.format("Doctor Who") + '*'
