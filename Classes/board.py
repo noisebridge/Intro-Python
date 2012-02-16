@@ -1,25 +1,31 @@
-#!/usr/bin/env python
+# User only to make a set number of guesses
+# Game Board into a class
+# allow for words of Any size
 
-class Boards(object):
-	''' Prints the game board for our jargon game'''
-	def __init__(self,secretWord, wordsize=5, guesses=5):
+class Board(object):
+
+	def __init__(self, wordsize = 5, guesses = 5):
 		self.wordsize = wordsize
 		self.guesses = guesses
 		self.board = []
-		self.secretWord = secretWord
-		self.attempt = 0
-		for i in range(guesses):
+		for i in range(self.guesses):
 			self.board.append(['*'] * self.wordsize)
 
-	def __str__(self):
-		self.strboard = '+' + "---+" * self.wordsize + '\n'
+
+	def printBoard(self):
+		print '+' + "---+" * self.wordsize 
 		for row in range(self.guesses):
-			self.strboard += '|'
-
+			strRow  = '|'
 			for col in range(self.wordsize):
-				self.strboard += ' %s |' % (self.board[row][col]) 
+				strRow += ' %s |' % (self.board[row][col])
 
-			self.strboard += '\n+' + "---+" * self.wordsize + '\n'
-		return self.strboard
+			print strRow
+		print '+' + "---+" * self.wordsize 
+
+
+if __name__ == "__main__":
+	b = Board()
+	b.printBoard()
+ 
 
 
