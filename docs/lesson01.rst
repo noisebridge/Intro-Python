@@ -15,7 +15,8 @@ Hello World
 ===========
 It is tradition to make your first program in any new language simply have the computer print the text Hello World on the screen. In python this is really simple. 
 
-Type the following::
+Type the following
+::
 	#!/usr/bin/env python
 
 	print "Hello World!"
