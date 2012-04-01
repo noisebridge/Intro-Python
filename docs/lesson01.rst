@@ -13,7 +13,7 @@ Lets get started writing our first python program
 
 Hello World
 ===========
-It is tradition to make your first program in any new language simply have the computer print the text Hello World on the screen. In python this is really simple. 
+It is tradition to make your first program in any new language simply have the computer print the text Hello World on the screen. In python this is really simple. *Sample code in Lesson01/exp01.py*
 
 Type the following
 ::
@@ -33,3 +33,11 @@ Documentation Strings
 The second type of python comment is called a documentation string or docstring for short. Docstrings are multiline comments and always start and end with tripple single/double quotes. 
 
 Python also reads the first docstring in a file and assigns it to a varable. `__doc__`
+
+Math in Python
+==============
+In python you can use simple math like this
+::
+	print 2 + 3
+	5
+notice that numbers do not have quote marks around them. 
