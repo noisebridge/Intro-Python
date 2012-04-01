@@ -89,6 +89,32 @@ Each week we will have homework assignments that invlove using the skills we lea
 
 Homework Assignment #1 Eliza
 ----------------------------
-We are going to create an Eliza_ chatbot. 
+We are going to create an Eliza_ chatbot. Eliza is a simple interactive script that acts as a thearipist. She takes a response from the user and turns the words around to simulate a real conversation. 
+
+1. Create a file eliza.py
+2. Prompt your user for their name.
+3. Welcome the user by name to your office and ask them what their problem is. 
+
+**Example Run**
+::
+	Hello can I have your name: Kellan
+	Hi Kellan I am Eliza your thearipist. Please come into my office and have a seat on the couch. Great now that you are comfortable please tell me what is troubling you:
 
 .. _Eliza: http://en.wikipedia.org/wiki/ELIZA
+
+Homework Assignment #2 Jargon
+-----------------------------
+The second game we are going to create is called Jargon. It is a word guessing game mixed with mastermind. One importiant part of this game will be drawing the gameboard on screen. For your first assignment will be to draw a box on screen. 
+1. Create a file named jargon.py
+2. Prompt the user for the box width
+3. Prompt the user for the box height
+4. Use these values to draw a box centered on the screen
+5. For the purpose of centering the box assume the screen width is 80 characters wide.
+
+**Example Run**
+::
+	Please give me a width: 40
+	Please give me a height: 3
+	               +--------------------------------------+
+	               |                                      |
+	               +--------------------------------------+
