@@ -67,3 +67,28 @@ In python you do not need to declare what type of variable it is like you do in 
 	price = 4.95
 	myName = "Kellan"
 	someVar = myName
+
+String Formating
+================
+While we will cover string formating in a later lesson I have included a little bit of string formating in our examples. I will fill in this section of the docs later.
+
+Getting User Input
+==================
+Prompting the user for input is quite easy in python. You can use `raw_input()` to prompt the user for to input data. 
+::
+	print "Please enter a value:"
+	myVar = raw_input()
+This can be combined into one statement making your code easier to type.
+::
+	myVar = raw_input("Please enter a value: ")
+
+
+Homework
+========
+Each week we will have homework assignments that invlove using the skills we learned this week. Each assignment will be a building block of one of the two games we will be building over the course. 
+
+Homework Assignment #1 Eliza
+----------------------------
+We are going to create an Eliza_ chatbot. 
+
+.. _Eliza: http://en.wikipedia.org/wiki/ELIZA
