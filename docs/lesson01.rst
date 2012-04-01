@@ -41,3 +41,29 @@ In python you can use simple math like this
 	print 2 + 3
 	5
 notice that numbers do not have quote marks around them. 
+
++----------+-----------+---------+--------+
+| Operator | Operation | Example | Result |
++==========+===========+=========+========+
+|     +    |  Addition |  3 + 2  |    5   |
++----------+-----------+---------+--------+
+|     -    |  Subtract |  3 - 2  |    1   |
++----------+-----------+---------+--------+
+|     *    | Multiply  |  3 * 2  |    6   |
++----------+-----------+---------+--------+
+|     /    | Division  |  6 / 2  |    3   |
++----------+-----------+---------+--------+
+|     %    |  Modulus  |  5 % 3  |    2   |
++----------+-----------+---------+--------+
+|    **    |  Exponent |  3 ** 2 |    9   |
++----------+-----------+---------+--------+
+
+Variables in Python
+===================
+Variables are holding places for values. Just like in high school math class you can assign a value to a variable **x = 3** In python variable names must start with a letter. They can contain any letter or number and the _ character. No other characters can be in the variable name. Pythons variables are case sensitive. Which means MyVar myvar and MYVAR are all different variables. 
+
+In python you do not need to declare what type of variable it is like you do in other languages. You assign a value to a variable with the assignment operator which is the equal sign
+::
+	price = 4.95
+	myName = "Kellan"
+	someVar = myName
