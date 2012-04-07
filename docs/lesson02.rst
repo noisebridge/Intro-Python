@@ -10,3 +10,7 @@ We can do the same thing in python.
 	if (username == YOURNAME):
 		print "Welcome %s" % (username)
 In this example we are testing to see if the value that the user enters is the same as as the value we stored in our program. In my example above I used my name Kellan.
+
+Indention in Python
+===================
+One of the reasons that python is easier to learn than other languages is because they do not mark blocks of code with curley braces {}. Python insted has chosen to obmit the curley braces in favor of using indention to mark blocks of code. This stops many errors that users of other languages offen experience because they forgot to add a closing }.
