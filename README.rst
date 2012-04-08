@@ -12,6 +12,7 @@ Prerequisites
 No previous programing or Python experince is required to take this class. Basic understanding of how to use a computer is assumed. Python is a great first language and I will work hard to help you understand the concepts to be successful. 
 
 Each student should come to class with a laptop that they can write Python code on. If you do not have a laptop then you can find someone to pair up with. Python is a portable lanuage that works on many operating systems. While Python does run on almost all operating systems we recomend that students use Linux or MacOS if possible. We have simply found that students have an easier time with these operating systems. Each system will need to have the following installed. 
+
 1. `Python 2.6`_ or `Python 2.7`_.
 2. Git_ 1.6+
 3. A good text editor
