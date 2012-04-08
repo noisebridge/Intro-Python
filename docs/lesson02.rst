@@ -16,13 +16,14 @@ Indention in Python
 One of the reasons that python is easier to learn than other languages is because they do not mark blocks of code with curley braces {}. Python insted has chosen to obmit the curley braces in favor of using indention_ to mark blocks of code. This stops many errors that users of other languages offen experience because they forgot to add a closing }. The rules for indention can be found in PEP8_. The rules are pretty simple. In python it is perfered that we indent blocks of code with 4 spaces insted of tabs. Each level of indention is 4 spaces deeper than the one level higher. 
 
 ::
-    if SOMETEST:
-        Statement 1
-        Statement 2
-        Statment 3
-        if SECONDTEST:
-            Deeper statement
-            Deeper Statement 2
+    if True:
+        print "This statment always Runs"
+        print "This statment also runs"
+    if False:
+        print "This statement never runs"
+    print "This runs too"
+
+There are several places in python where we will learn about different types of blocks of code. In the above example the first if statement if true will run the first three lines of code. This is will do the test 
 
 
 
