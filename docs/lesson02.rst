@@ -22,7 +22,7 @@ One of the reasons that python is easier to learn than other languages is becaus
         print "This statement never runs"
     print "This runs too"
 
-There are several places in python where we will learn about different types of blocks of code. In the above example the first if statement if true will run the first three lines of code. This is will do the test 
+There are several places in python where we will learn about different types of blocks of code.
 
 
 
