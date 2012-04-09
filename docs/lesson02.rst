@@ -38,8 +38,8 @@ Lastly the third optional argument is the step. so if you had a string '12345678
 Strings are Immutable
 ---------------------
 In python strings are immutable which basically means that once a string is created it can't be changed. Insted python has to make a new copy of the string if you want to modify it. 
->>>string = "MyString"
-'mystring'
+>>> string = "MyString"
+mystring
 
 
 
