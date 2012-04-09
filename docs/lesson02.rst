@@ -1,6 +1,6 @@
-================
-String Formating
-================
+=================
+All About Strings
+=================
 
 This week we are going to continue working with strings. First we need to define a what a string is. A string is simply a sequence of characters. In python we identify strings of text by enclosing them in either single or double quotes.
 ::
@@ -75,7 +75,7 @@ str.lower()
 	Converts a string to lowercase.
 
 str.replace(old, new[, count])
-	Useds to replace part of a string with another piece.
+	Used to replace part of a string with another piece.
 
 str.title()
 	Converts a string to titlecase ex 'bow ties are cool' would be converted to 'Bow Ties Are Cool'
@@ -83,6 +83,46 @@ str.title()
 str.upper()
 	Converts a string to uppercase.
 
+String Formating
+================
+In python 2.6 and later there are two methods of string formating. String Formating Expressions and String Format Method. Both methods perform the same task and the jury is out on which one is better than the other. Using the format method does in some cases give you more options than formating expressions. In this lesson I will show you examples that use both methods. For the rest of the class I will favor the newer format method.
+
+String Formatting Expressions
+-----------------------------
+In this method we place the string to be formated with one or more embed targets. This is followed by the % binary operator which is followed by a tuple of values to be placed in the embed targets.
+::
+    "%s cost $%f" % ("Ice Cream Cones", 1.5)
+    Ice Cream Cones cost $1.500000
+Just like in last weeks example we can set the number of values printed after the decimal. 
+::
+    "%s cost $%.2f" % ("Ice Cream Cones", 1.5)
+    'Ice Cream Cones cost $1.50'
+
+String Formating Method Calls
+-----------------------------
+This method provides all the same functions as above. The syntax is just a little different. The code above using the newer method looks like this.
+::
+    "{0} cost {1}".format("Ice Cream Cones", 1.5)
+In this method instead of using the % Binary Operator we use curly braces with a number for the positional argument. In some versions of python the numbers can be omitted. To fix the the number of decimals places as we did earlier we write the following code.
+::
+    "{0} cost ${1:.2f}".format("Ice Cream Cones", 1.5)
+We can align our text by adding the alignment characters < , >, =, or ^. These are left alignment, right alignment, padding after the a sign character and centered.
+::
+    "*{0:<30}*".format('+++')
+    "*{0:^30}*".format('+++')
+    "*{0:>30}*".format('+++')
+    '*+++                           *'
+    '*             +++              *'
+    '*                           +++*'
+We can add a fill character before the alignment character.
+::
+    "*{0:.<30}*".format('+++')
+    '*+++...........................*'
+We can use the +, or - sign to show positive and negative values. The - shows only if the value is negative where the + shows the sign when it is either positive or negative. 
+::
+    "*{0:+10.2f}*".format(1.5)
+
+String formating can get quite complex as you can see. I have read the documentation several times and I still sometimes have a hard time getting it right. So be patient with it. It will start to become clear.
 
 .. _string methods: http://docs.python.org/library/stdtypes.html#string-methods
 
