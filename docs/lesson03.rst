@@ -16,12 +16,12 @@ The dir() built-in can tell us about any python object. When we call it just lik
 ['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BufferError', 'BytesWarning', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'NameError', 'None', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'ReferenceError', 'RuntimeError', 'RuntimeWarning', 'StandardError', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'ZeroDivisionError', '_', '__debug__', '__doc__', '__import__', '__name__', '__package__', 'abs', 'all', 'any', 'apply', 'basestring', 'bin', 'bool', 'buffer', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'cmp', 'coerce', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'divmod', 'enumerate', 'eval', 'execfile', 'exit', 'file', 'filter', 'float', 'format', 'frozenset', 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'intern', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'long', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'quit', 'range', 'raw_input', 'reduce', 'reload', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'unichr', 'unicode', 'vars', 'xrange', 'zip']
 
 Each one of these objects is something python gives us for free without typing a single bit of code. We are not going to cover them all in this lesson but it helps to know they are there. If you look at the long list above you will see help. Lets give that one a try.
-
->>> help
-Type help() for interactive help, or help(object) for help about object.
 ::
+	>>> help
+	Type help() for interactive help, or help(object) for help about object.
+
 	>>> help()
-	``Welcome to Python 2.7!  This is the online help utility.
+	Welcome to Python 2.7!  This is the online help utility.
 
 	If this is your first time using Python, you should definitely check out
 	the tutorial on the Internet at http://docs.python.org/tutorial/.
@@ -33,6 +33,8 @@ Type help() for interactive help, or help(object) for help about object.
 	To get a list of available modules, keywords, or topics, type "modules",
 	"keywords", or "topics".  Each module also comes with a one-line summary
 	of what it does; to list the modules whose summaries contain a given word
-	such as "spam", type "modules spam".``
+	such as "spam", type "modules spam".
+
+As you can see python has a built in help system. 
 
 .. _`built-in functions: http://docs.python.org/library/functions.html
