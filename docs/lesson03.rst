@@ -19,19 +19,20 @@ Each one of these objects is something python gives us for free without typing a
 
 >>> help
 Type help() for interactive help, or help(object) for help about object.
->>> help()
-``Welcome to Python 2.7!  This is the online help utility.
+::
+	>>> help()
+	``Welcome to Python 2.7!  This is the online help utility.
 
-If this is your first time using Python, you should definitely check out
-the tutorial on the Internet at http://docs.python.org/tutorial/.
+	If this is your first time using Python, you should definitely check out
+	the tutorial on the Internet at http://docs.python.org/tutorial/.
 
-Enter the name of any module, keyword, or topic to get help on writing
-Python programs and using Python modules.  To quit this help utility and
-return to the interpreter, just type "quit".
+	Enter the name of any module, keyword, or topic to get help on writing
+	Python programs and using Python modules.  To quit this help utility and
+	return to the interpreter, just type "quit".
 
-To get a list of available modules, keywords, or topics, type "modules",
-"keywords", or "topics".  Each module also comes with a one-line summary
-of what it does; to list the modules whose summaries contain a given word
-such as "spam", type "modules spam".``
+	To get a list of available modules, keywords, or topics, type "modules",
+	"keywords", or "topics".  Each module also comes with a one-line summary
+	of what it does; to list the modules whose summaries contain a given word
+	such as "spam", type "modules spam".``
 
 .. _`built-in functions: http://docs.python.org/library/functions.html
