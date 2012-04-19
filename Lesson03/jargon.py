@@ -10,6 +10,8 @@ http://www.python.org/dev/peps/pep-0008/
 import os # we need the os module to control directories. 
 from os import path
 
+os.path.abspath(__file__)
+
 
 welcomeMsg = "Welcome to Jargon"
 msgSize = len(welcomeMsg)
@@ -26,9 +28,12 @@ print '{0:^{1}}'.format(BoxTop, screenWidth)
 
 # Get full path to the jargon file
 gameLocation = path.abspath(__file__)
+print "Game Location" + gameLocation
 
 # Lets get the game directory
 gameDirectory = path.dirname(gameLocation)
+
+print "GameDirectory: " + gameDirectory
 
 
 # change directory to current directory
@@ -40,4 +45,5 @@ gameFile = open("../includes/words.txt") # Leaving out r because it is the defau
 # Read in the data from the file
 gameData = gameFile.read()
 # print game data
-print gameData
+#print gameData
+print __file__
