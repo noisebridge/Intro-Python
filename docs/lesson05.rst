@@ -40,6 +40,34 @@ Before we get into the main topic of making decisions I want to go over another 
         script, username = argv
         print "Hello {0}".format(username)
 
+This takes one command line argument and passes it to the value username. Try this example without passing a value or passing more than one value and see what happens. 
+
+While there are better ways to fix this error in the future lets use this weeks new skill.
+
+Making Decisions
+================
+In computer programing one way we control our system is by making simple decisions. The method for making decisions is based on writing a simple test. Each test is evaluated for truthfulness. If the test results in a true value we take one path, If not we go in another. 
+
+::
+    if SOMETEST:
+        Do something
+
+In our example from above we know that argv needs to have two values in it. So we can test the len of argv and see if it equals 2
+
+::
+    #!/usr/bin/env python
+
+    # Import argv so we can parse command arguments
+    from sys import argv
+
+    if __name__ == '__main__':
+        if len(argv) == 2:
+            # Unpack command line variables
+            script, username = argv
+            print "Hello {0}".format(username)
+
+While this gets rid of our error it is not very helpful. When the user types the wrong number of arguments. It would be better to give the user some feedback.
+
 
 
 
