@@ -13,7 +13,7 @@ In this example we are testing to see if the value that the user enters is the s
 
 Indention in Python
 ===================
-One of the reasons that python is easier to learn than other languages is because they do not mark blocks of code with curley braces {}. Python insted has chosen to obmit the curley braces in favor of using indention_ to mark blocks of code. This stops many errors that users of other languages offen experience because they forgot to add a closing }. The rules for indention can be found in PEP8_. The rules are pretty simple. In python it is perfered that we indent blocks of code with 4 spaces insted of tabs. Each level of indention is 4 spaces deeper than the one level higher. 
+One of the reasons that python is easier to learn than other languages is because they do not mark blocks of code with curly braces {}. Python instead has chosen to omit the curly braces in favor of using indention_ to mark blocks of code. This stops many errors that users of other languages often experience because they forgot to add a closing }. The rules for indention can be found in PEP8_. The rules are pretty simple. In python it is preferred that we indent blocks of code with 4 spaces instead of tabs. Each level of indention is 4 spaces deeper than the one level higher. 
 ::
     if True:
         print "This statment always Runs"
@@ -23,6 +23,22 @@ One of the reasons that python is easier to learn than other languages is becaus
     print "This runs too"
 
 There are several places in python where we will learn about different types of blocks of code.
+
+Command Line Arguments
+======================
+Before we get into the main topic of making decisions I want to go over another python built in method. The builtin sys module gives you a builtin list named argv that stores the command line arguments passed when your script is run.
+::
+    #!/usr/bin/env python
+    ''' 
+    Takes username from a command line argument. Prints Welcome username
+    '''
+    # Import argv so we can parse command arguments
+    from sys import argv
+    if __name__ == '__main__':
+
+        # Unpack command line variables
+        script, username = argv
+        print "Hello {0}".format(username)
 
 
 
