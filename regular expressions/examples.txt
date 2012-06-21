@@ -1,0 +1,16 @@
+Bow
+Bow ties are cool.
+B0w ties are cool.
+Bow ties are coolN
+B0w ties are nerdy.
+Bow ties are kewl.
+
+http://doctorwho.com
+https://doctorwho.com
+ftp://doctorwho.com
+
+tardis.jpg
+k9.jpg
+rose.png
+dalek.exe
+cybermen.jpg.party.jpg
